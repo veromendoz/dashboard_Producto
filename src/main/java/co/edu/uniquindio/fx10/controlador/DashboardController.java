@@ -23,6 +23,7 @@ public class DashboardController {
     @FXML
     private ResourceBundle resources;
 
+
     @FXML
     private URL location;
 

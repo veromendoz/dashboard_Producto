@@ -62,7 +62,7 @@ public class ProductoRepository {
      */
     public Producto buscarPorCodigo(String codigo) {
         return productos.stream()
-                .filter(p -> p.getCodigo().equals(codigo))
+                .filter(p -> p.getCode().equals(codigo))
                 .findFirst()
                 .orElse(null);
     }

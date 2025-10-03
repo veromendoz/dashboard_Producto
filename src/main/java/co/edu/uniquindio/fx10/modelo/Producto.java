@@ -4,53 +4,53 @@ package co.edu.uniquindio.fx10.modelo;
  * Clase que representa un producto
  */
 public class Producto {
-    private String codigo;
-    private String nombre;
-    private String descripcion;
-    private double precio;
+    private String code;
+    private String name;
+    private String description;
+    private double price;
     private int stock;
 
     public Producto() {
     }
 
     public Producto(String codigo, String nombre, String descripcion, double precio, int stock) {
-        this.codigo = codigo;
-        this.nombre = nombre;
-        this.descripcion = descripcion;
-        this.precio = precio;
+        this.code = codigo;
+        this.name = nombre;
+        this.description = descripcion;
+        this.price = precio;
         this.stock = stock;
     }
 
-    public String getCodigo() {
-        return codigo;
+    public String getCode() {
+        return code;
     }
 
-    public void setCodigo(String codigo) {
-        this.codigo = codigo;
+    public void setCode(String code) {
+        this.code = code;
     }
 
-    public String getNombre() {
-        return nombre;
+    public String getName() {
+        return name;
     }
 
-    public void setNombre(String nombre) {
-        this.nombre = nombre;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getDescripcion() {
-        return descripcion;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescripcion(String descripcion) {
-        this.descripcion = descripcion;
+    public void setDescription(String description) {
+        this.description = description;
     }
 
-    public double getPrecio() {
-        return precio;
+    public double getPrice() {
+        return price;
     }
 
-    public void setPrecio(double precio) {
-        this.precio = precio;
+    public void setPrice(double price) {
+        this.price = price;
     }
 
     public int getStock() {
@@ -64,12 +64,11 @@ public class Producto {
     @Override
     public String toString() {
         return "Producto{" +
-                "codigo='" + codigo + '\'' +
-                ", nombre='" + nombre + '\'' +
-                ", descripcion='" + descripcion + '\'' +
-                ", precio=" + precio +
+                "codigo='" + code + '\'' +
+                ", nombre='" + name + '\'' +
+                ", descripcion='" + description + '\'' +
+                ", precio=" + price +
                 ", stock=" + stock +
                 '}';
     }
 }
-

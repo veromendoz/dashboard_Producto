@@ -1,88 +1,129 @@
-/* =========================
-   ESTILOS GENERALES
-========================= */
+/* =====================================================
+   🎀 ESTILOS GENERALES
+===================================================== */
 .root {
-    -fx-background-color: #f9fafb; /* Fondo claro y limpio */
-    -fx-font-family: "Segoe UI", "Roboto", sans-serif;
+    -fx-background-color: #fdf2f8; /* Fondo rosado muy suave */
+    -fx-font-family: "Poppins", "Montserrat", sans-serif;
 }
 
-/* =========================
-   TÍTULO
-========================= */
-.label {
-    -fx-font-size: 20px;
-    -fx-font-weight: bold;
-    -fx-text-fill: #2c3e50; /* Azul grisáceo elegante */
+/* =====================================================
+   🩰 TÍTULOS
+===================================================== */
+.titulo-principal {
+    -fx-font-size: 24px;
+    -fx-font-weight: 700;
+    -fx-text-fill: #be185d; /* Rosa fuerte */
+    -fx-padding: 10 0 5 0;
 }
 
-/* =========================
-   TABLA
-========================= */
+.subtitulo {
+    -fx-font-size: 16px;
+    -fx-text-fill: #4b5563; /* Gris elegante */
+    -fx-font-weight: 500;
+}
+
+/* =====================================================
+   📋 TABLA DE PRODUCTOS (corregida)
+===================================================== */
 .table-view {
     -fx-background-color: white;
-    -fx-border-color: #d1d5db;
+    -fx-border-color: #f9a8d4;
     -fx-border-radius: 8px;
     -fx-background-radius: 8px;
     -fx-padding: 5px;
+    -fx-table-cell-border-color: #f9a8d4;
 }
 
+/* Fondo rosado en el encabezado */
 .table-view .column-header-background {
-    -fx-background-color: linear-gradient(to bottom, #4f46e5, #3730a3); /* Degradado morado */
+    -fx-background-color: linear-gradient(to bottom, #f9a8d4, #f472b6); /* Rosa pastel degradado */
     -fx-background-radius: 8px 8px 0 0;
+    -fx-border-color: transparent;
 }
 
-.table-view .column-header, .table-view .filler {
-    -fx-size: 35px;
-    -fx-border-color: transparent;
-    -fx-border-width: 0 0 1 0;
-    -fx-background-color: transparent;
+/* Forzar color en las celdas del encabezado */
+.table-view .column-header,
+.table-view .column-header .filler {
+    -fx-background-color: transparent; /* eliminamos gris */
 }
 
 .table-view .column-header .label {
     -fx-text-fill: white;
-    -fx-font-weight: bold;
+    -fx-font-weight: 600;
     -fx-font-size: 13px;
+    -fx-font-family: "Poppins", sans-serif;
+}
+
+/* Filas y hover */
+.table-row-cell {
+    -fx-cell-size: 30px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
+}
+
+.table-row-cell:filled:selected {
+    -fx-background-color: #fce7f3;
+}
+
+.table-row-cell:hover {
+    -fx-background-color: #fdf2f8;
+}
+
+
+.table-view .column-header-background {
+    -fx-background-color: linear-gradient(to bottom, #f9a8d4, #f472b6); /* Degradado rosado pastel */
+    -fx-background-radius: 8px 8px 0 0;
+}
+
+.table-view .column-header .label {
+    -fx-text-fill: white;
+    -fx-font-weight: 600;
+    -fx-font-size: 13px;
+    -fx-font-family: "Poppins", sans-serif;
 }
 
 .table-row-cell {
     -fx-cell-size: 30px;
+    -fx-font-size: 13px;
+    -fx-text-fill: #374151;
 }
 
 .table-row-cell:filled:selected {
-    -fx-background-color: #e0e7ff; /* Azul muy suave al seleccionar */
+    -fx-background-color: #fce7f3; /* Rosa suave al seleccionar */
 }
 
 .table-row-cell:hover {
-    -fx-background-color: #eef2ff; /* Efecto hover */
+    -fx-background-color: #fdf2f8; /* Hover sutil */
 }
 
-/* =========================
-   BOTONES
-========================= */
+/* =====================================================
+   💗 BOTONES
+===================================================== */
 .button {
-    -fx-background-color: linear-gradient(to right, #6366f1, #4338ca);
+    -fx-background-color: linear-gradient(to right, #f9a8d4, #f472b6); /* Rosa pastel degradado */
     -fx-text-fill: white;
-    -fx-font-weight: bold;
+    -fx-font-weight: 600;
     -fx-font-size: 13px;
-    -fx-background-radius: 20px;
-    -fx-padding: 6px 15px;
+    -fx-background-radius: 0; /* Botones cuadrados */
+    -fx-padding: 8px 16px;
     -fx-cursor: hand;
-    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.15), 4, 0.3, 0, 2);
     -fx-border-color: transparent;
+    -fx-effect: dropshadow(gaussian, rgba(0,0,0,0.1), 3, 0.3, 0, 2);
+    -fx-font-family: "Poppins", sans-serif;
 }
 
 .button:hover {
-    -fx-background-color: linear-gradient(to right, #818cf8, #4f46e5);
+    -fx-background-color: linear-gradient(to right, #fbcfe8, #f9a8d4);
 }
 
 .button:pressed {
-    -fx-background-color: #312e81;
+    -fx-background-color: #ec4899;
 }
 
-/* =========================
-   SEPARADOR
-========================= */
+/* =====================================================
+   🩶 SEPARADOR
+===================================================== */
 .separator *.line {
-    -fx-border-color: #d1d5db;
+    -fx-border-color: #f9a8d4;
     -fx-border-width: 1;
 }
